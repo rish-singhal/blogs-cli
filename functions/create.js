@@ -5,10 +5,6 @@ import message from '../utility/messages.js'
 
 import chalk from 'chalk'
 
-
-
-// TODO(rish-singhal): error handling for path variable
-
 const createMessage = () => {
     console.log()
     console.log(chalk.black(chalk.bgGreen("Enter information about the new blog...")))
