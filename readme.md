@@ -4,7 +4,7 @@
 - [Blog Writing Command Line Tool](#blog-writing-command-line-tool)
     - [Table of Contents](#table-of-contents)
     - [Instructions to install](#instructions-to-install)
-  - [Usage](#usage)
+    - [Usage](#usage)
     - [Tech Used](#tech-used)
     - [Screenshots](#screenshots)
     - [Author](#author)
@@ -25,8 +25,7 @@ Install the tool
 ```bash
 $ npm install --global .
 ```
-## Usage
-
+### Usage
 
 ### Tech Used
 - [NodeJS](https://nodejs.org/en/)

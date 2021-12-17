@@ -11,14 +11,14 @@ message.welcome()
 while (true) {
   const {command, args} = takeInput(message.text.INPUT_MESSAGE)
 
-  if (command in commands)
-    commands[command](args)
-  else if (command == 'exit' && args.length == 0) {
+  if (args.length > 0) {
+    message.wrongCommand()
+  } else if (command in commands) {
+    await commands[command]()
+  } else if (command == 'exit') {
     console.log(message.text.EXIT_MESSAGE)
     break
-  } else
+  } else {
     message.wrongCommand()
-
-  // empty line
-  console.log()
+  }
 }
