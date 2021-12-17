@@ -3,6 +3,9 @@ import os from 'os'
 
 const USERNAME = os.userInfo().username
 
+const INPUT_MESSAGE = chalk.yellow("blogs-cli> ")
+const EXIT_MESSAGE = "Bye!"
+
 const welcome = () => {
   console.log()
   console.log(chalk.black(chalk.bgYellow("Welcome to the blogs CLI!")))
@@ -19,9 +22,13 @@ const wrongCommand = () => {
   )
 }
 
-const messages = ({
+const message = ({
     welcome,
-    wrongCommand
+    wrongCommand,
+    text: ({
+      INPUT_MESSAGE,
+      EXIT_MESSAGE
+    }),
 })
 
-export default messages
+export default message

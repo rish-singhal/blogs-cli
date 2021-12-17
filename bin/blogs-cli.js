@@ -1,19 +1,24 @@
 #!/usr/bin/env node
 
-import chalk from 'chalk'
-import messages from '../utility/messages.js'
-import readlineSync from 'readline-sync'
+// list of commands and respective functions are present in command
+// dictionary
+import commands from '../utility/commandRouter.js'
+import message from '../utility/messages.js'
+import { takeInput } from '../utility/helpers.js'
 
-// output: welcome message
-messages.welcome()
+message.welcome()
 
 while (true) {
-  const input = readlineSync.question(chalk.yellow(`blogs-cli> `))
-  if (input == 'exit') {
-    console.log('Bye!')
+  const {command, args} = takeInput(message.text.INPUT_MESSAGE)
+
+  if (command in commands)
+    commands[command](args)
+  else if (command == 'exit' && args.length == 0) {
+    console.log(message.text.EXIT_MESSAGE)
     break
-  } else {
-    messages.wrongCommand()
-  }
+  } else
+    message.wrongCommand()
+
+  // empty line
   console.log()
 }

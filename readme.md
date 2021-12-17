@@ -3,25 +3,36 @@
 ### Table of Contents
 - [Blog Writing Command Line Tool](#blog-writing-command-line-tool)
     - [Table of Contents](#table-of-contents)
-    - [Usage](#usage)
+    - [Instructions to install](#instructions-to-install)
+  - [Usage](#usage)
     - [Tech Used](#tech-used)
     - [Screenshots](#screenshots)
-    - [Resources](#resources)
-    - [Ideas](#ideas)
     - [Author](#author)
 
-### Usage
+### Instructions to install
+
+Clone the repository
+```bash
+$ git clone https://github.com/rish-singhal/blogs-cli.git
+```
+
+Install the dependencies by executing following command in the cloned repository
+```bash
+$ npm install
+```
+
+Install the tool
+```bash
+$ npm install --global .
+```
+## Usage
+
 
 ### Tech Used
-1. [NodeJS](https://nodejs.org/en/)
-2. [npm](https://www.npmjs.com/)
+- [NodeJS](https://nodejs.org/en/)
+- [npm](https://www.npmjs.com/)
 
 ### Screenshots
-
-### Resources
-
-### Ideas
-
 
 ### Author
 
