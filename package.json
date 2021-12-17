@@ -1,0 +1,14 @@
+{
+  "name": "blogs-cli",
+  "version": "1.0.0",
+  "description": "CLI for creating blog posts for my RishBlogs",
+  "main": "index.js",
+  "bin": {
+    "rishblogs": "./bin/blogs-cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rish-singhal",
+  "license": "MIT"
+}
