@@ -12,7 +12,10 @@ Currently, it is capable of creating a markdown file at the specified path (jeky
     - [Instructions to install](#instructions-to-install)
     - [Usage](#usage)
     - [Tech Used](#tech-used)
-    - [Features to be implemented](#features-to-be-implemented)
+    - [To be done](#to-be-done)
+      - [Commands](#commands)
+      - [Features](#features)
+      - [Ideas](#ideas)
     - [Author](#author)
 
 ### Instructions to install
@@ -74,12 +77,20 @@ blogs-cli> exit
 
 The CLI tool is implemented in [NodeJS](https://nodejs.org/en/).
 
-### Features to be implemented
+### To be done
 
-- `publish`: To publish the blog post to git.
+#### Commands
+- `publish`: To publish the blog posts to git.
 - `edit`: To edit existing blog post
 - `list`: To list all the blog posts
 - `delete`: To delete one of the blog posts
+
+#### Features
+- Allowing going back to the previous commands by `up` and `down` arrows.
+
+#### Ideas
+- Follow good node practices.
+- Explore and use functional programming in NodeJS.
 
 ### Author
 
