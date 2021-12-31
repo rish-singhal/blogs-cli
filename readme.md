@@ -80,7 +80,7 @@ The CLI tool is implemented in [NodeJS](https://nodejs.org/en/).
 ### To be done
 
 #### Commands
-- `publish`: To publish the blog posts to git.
+- `publish`: To publish the blog posts to git
 - `edit`: To edit existing blog post
 - `list`: To list all the blog posts
 - `delete`: To delete one of the blog posts
@@ -91,6 +91,7 @@ The CLI tool is implemented in [NodeJS](https://nodejs.org/en/).
 #### Ideas
 - Follow good node practices.
 - Explore and use functional programming in NodeJS.
+- Add unit tests for the CLI tool.
 
 ### Author
 
